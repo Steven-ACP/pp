@@ -9,22 +9,43 @@ div[class^="child"] {
     margin: 20px 0;
 }
 
-.child {
-    flex-grow: 1;
-}
-
-.child, .child3, .child5, .child7 {
+.child,
+.child3,
+.child5,
+.child7 {
     background-color: #bc6c25;
     border: 1px solid #894e19;
 }
 
-.child2, .child4, .child6, .child8 {
+.child2,
+.child4,
+.child6,
+.child8 {
     background-color: #dda15e;
     border: 1px solid #966b3a;
 }
 
+.parent {
+    display: flex;
+}
+
+.child,
+.child2 {
+    flex: 0 1 auto;
+}
+
+.child6,
+.child7,
+.child3,
+.child4 {
+    flex: 1 1 auto;
+}
+
+.child5,
+.child8 {
+    flex: 2 1 auto;
+}
+
 /* FLEXBOX STYLES */
-/* Add the flexbox styles below.
-
+/* Add the flexbox styles below/
 You do NOT need to touch the styles above this */
-
